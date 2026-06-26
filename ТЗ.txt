@@ -1,0 +1,219 @@
+# PROJECT: Late Reply
+
+Create a playable prototype in Godot 4 using C#.
+
+Genre:
+Psychological horror, narrative adventure.
+
+Inspirations:
+
+* Cry of Fear
+* Silent Hill 2
+* Silent Hill 4
+* Easy Delivery Co
+* LSD Dream Emulator
+
+Visual style:
+
+* Low poly
+* PSX-inspired
+* VHS post-processing
+* Dark urban atmosphere
+* No anime aesthetic despite the protagonist having cat ears and a tail
+
+Goal:
+Build a 10-15 minute vertical slice demonstrating exploration, environmental storytelling, psychological horror, and reality distortion.
+
+## Main Character
+
+Female.
+
+Age: 18-21.
+
+Height: 160-165 cm.
+
+Appearance:
+
+* Pale skin
+* Gray eyes
+* Black or ash-colored hair
+* Cat ears
+* Cat tail
+* Thin build
+
+Personality:
+
+* Introverted
+* Depressive
+* Anxious
+* Intelligent
+* Sarcastic
+
+The character should feel like a real person struggling with mental issues, not a stereotypical anime catgirl.
+
+## Gameplay
+
+Third-person camera.
+
+Movement:
+
+* Walk
+* Sprint
+* Interact
+
+No combat in prototype.
+
+Focus on:
+
+* Exploration
+* Atmosphere
+* Environmental storytelling
+
+## Intro Sequence
+
+Player wakes up at night inside bedroom.
+
+Bedroom contains:
+
+* PC desk
+* Gaming chair
+* Posters similar to Hello Kitty aesthetics
+* Plush toys
+* Phone
+* Medication packages
+* Dirty dishes
+* Closed curtains
+* Headphones
+* Empty energy drink cans
+
+Environment should communicate:
+The protagonist rarely leaves her room.
+
+## Phone Interaction
+
+Phone receives message.
+
+Message:
+
+"hey, wanna go for a walk tomorrow?"
+
+Player can:
+
+* Reply positively
+* Reply negatively
+* Ignore
+
+Choice does not affect outcome.
+
+Purpose:
+Reveal protagonist's personality.
+
+## Computer Interaction
+
+Player can sit at PC.
+
+Computer UI includes:
+
+* Chat application
+* Browser
+* Music player
+* Notes app
+
+Notes reveal:
+
+* sleep problems
+* anxiety
+* medication
+* social isolation
+
+## First Psychological Event
+
+Second message appears:
+
+"are you okay?"
+
+Player returns to chat.
+
+Conversation history changes.
+
+Old messages suddenly appear.
+
+Examples:
+
+"please answer"
+
+"don't leave me"
+
+"where are you"
+
+Player never wrote them during gameplay.
+
+Reality begins to feel unreliable.
+
+## Panic Attack Sequence
+
+Screen effects:
+
+* tunnel vision
+* heavy breathing
+* ringing ears
+* camera shake
+* distorted audio
+
+Environment changes gradually:
+
+* furniture slightly moves
+* hallway becomes longer
+* shadows become darker
+
+No jumpscares.
+
+Focus on discomfort and confusion.
+
+## Horror Transition
+
+Computer screen flickers.
+
+A message appears:
+
+"TURN AROUND"
+
+Player turns around.
+
+Room looks normal.
+
+Several seconds pass.
+
+Lights go out.
+
+Prototype ends.
+
+## Technical Requirements
+
+Godot 4
+C#
+Modular architecture
+Reusable interaction system
+
+Required systems:
+
+* Third person controller
+* Interaction system
+* Dialogue system
+* Phone UI
+* Computer UI
+* VHS post-processing
+* Panic attack visual effects
+* Trigger-based events
+* Save system stub
+
+Keep assets placeholder-friendly.
+
+Focus on gameplay framework and atmosphere rather than content quantity.
+
+Deliver:
+
+* Full Godot project
+* Organized scene hierarchy
+* Clean C# code
+* README explaining project structure

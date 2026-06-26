@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://panic_attack_scene"]
+
+[ext_resource type="Script" path="res://Scripts/Systems/PanicAttackEffect.cs" id="1"]
+
+[node name="PanicAttackEffect" type="Node"]
+script = ExtResource("1")
+Duration = 15
+MaxTunnelVision = 0.5
+MaxCameraShake = 0.3
+MaxBreathingVolume = 0.8
+MaxRingVolume = 0.6

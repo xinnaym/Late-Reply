@@ -1,0 +1,127 @@
+[gd_scene load_steps=3 format=3 uid="uid://computer_ui_scene"]
+
+[ext_resource type="Script" path="res://Scripts/UI/ComputerUI.cs" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_desktop"]
+bg_color = Color(0.1, 0.1, 0.12, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.3, 0.3, 0.35, 1)
+content_margin_left = 10
+content_margin_top = 10
+content_margin_right = 10
+content_margin_bottom = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_taskbar"]
+bg_color = Color(0.15, 0.15, 0.18, 1)
+
+[node name="ComputerUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.85)
+mouse_filter = 2
+
+[node name="DesktopPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -600
+offset_top = -400
+offset_right = 600
+offset_bottom = 400
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_desktop")
+
+[node name="DesktopVBox" type="VBoxContainer" parent="DesktopPanel"]
+layout_mode = 2
+
+[node name="TitleBar" type="HBoxContainer" parent="DesktopPanel/DesktopVBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="DesktopPanel/DesktopVBox/TitleBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "她的 Desktop"
+
+[node name="Taskbar" type="HBoxContainer" parent="DesktopPanel"]
+layout_mode = 2
+theme_override_constants/separation = 5
+theme_override_styles/panel = SubResource("StyleBoxFlat_taskbar")
+
+[node name="ChatBtn" type="Button" parent="DesktopPanel/Taskbar"]
+layout_mode = 2
+text = "💬 Chat"
+
+[node name="NotesBtn" type="Button" parent="DesktopPanel/Taskbar"]
+layout_mode = 2
+text = "📝 Notes"
+
+[node name="BrowserBtn" type="Button" parent="DesktopPanel/Taskbar"]
+layout_mode = 2
+text = "🌐 Browser"
+
+[node name="MusicBtn" type="Button" parent="DesktopPanel/Taskbar"]
+layout_mode = 2
+text = "🎵 Music"
+
+[node name="Spacer" type="Control" parent="DesktopPanel/Taskbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CloseBtn" type="Button" parent="DesktopPanel/Taskbar"]
+layout_mode = 2
+text = "✕ Close"
+
+[node name="ChatPanel" type="PanelContainer" parent="DesktopPanel"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChatText" type="RichTextLabel" parent="DesktopPanel/ChatPanel"]
+layout_mode = 2
+bbcode_enabled = true
+text = ""
+
+[node name="NotesPanel" type="PanelContainer" parent="DesktopPanel"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NotesText" type="RichTextLabel" parent="DesktopPanel/NotesPanel"]
+layout_mode = 2
+bbcode_enabled = true
+text = ""
+
+[node name="BrowserPanel" type="PanelContainer" parent="DesktopPanel"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BrowserText" type="Label" parent="DesktopPanel/BrowserPanel"]
+layout_mode = 2
+text = "Connection timed out.\n\nNo internet connection detected.\n\nMaybe it's better this way."
+
+[node name="MusicPanel" type="PanelContainer" parent="DesktopPanel"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MusicText" type="Label" parent="DesktopPanel/MusicPanel"]
+layout_mode = 2
+text = "Now playing:\n\nlofi hip hop radio - beats to study/relax to\n\n♪ ♫ ♪ ♫ ♪\n\nVolume: ████░░░░ 50%"

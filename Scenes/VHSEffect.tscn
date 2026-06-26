@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://vhs_effect_scene"]
+
+[ext_resource type="Script" path="res://Scripts/Systems/VHSShaderController.cs" id="1"]
+
+[node name="VHSEffect" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1")
+DefaultIntensity = 0.3
+HorrorIntensity = 0.8
+TransitionSpeed = 2
+
+[node name="VHSRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
